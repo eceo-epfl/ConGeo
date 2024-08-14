@@ -34,8 +34,6 @@ class Configuration:
     # train on GPU if available
     device: str = 'cuda' if torch.cuda.is_available() else 'cpu' 
     fov: float = 0.0 # 0.0 for north-aligned, others for limited FoV or random shiftting
-    rotate: bool = False
-    mask_ratio: float = 0.0
     random_fov = False
 
 #-----------------------------------------------------------------------------#
@@ -65,8 +63,6 @@ if __name__ == '__main__':
     std = data_config["std"]
     img_size = config.img_size
     fov = config.fov
-    rotate = config.rotate
-    mask_ratio = config.mask_ratio
 
     image_size_sat = (img_size, img_size)
     
@@ -104,19 +100,11 @@ if __name__ == '__main__':
                                                                mean=mean,
                                                                std=std,
                                                                fov=fov,
-                                                               rotate=rotate,
-                                                               mask_ratio=mask_ratio,
                                                                )
 
     # Reference Satellite Images
     # for polar
-    '''
-    reference_dataset_test = CVUSADatasetEval(data_folder=config.data_folder ,
-                                              split="test",
-                                              img_type="polar_reference",
-                                              transforms=sat_transforms_val,
-                                              )
-    '''
+
     reference_dataset_test = CVUSADatasetEval(data_folder=config.data_folder ,
                                               split="test",
                                               img_type="reference",
