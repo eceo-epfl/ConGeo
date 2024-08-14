@@ -39,11 +39,11 @@ python eval_cvusa.py
 Tips:
 - Change the "train_fov" configration in the training code to customize your training mode:
 ```
-0.0: the north-aligned setting, (0.0, 360.0): limited FoV, 360.0: arbitrary orientations
+0.0: north-aligned, value between (0.0, 360.0): limited FoV, 360.0: arbitrary orientations
 ```
 - Change the "fov" configration in the eval code to change evaluation settings:
 ```
-0.0: the north-aligned setting, (70.0, 90.0, 180.0): limited FoV, 360.0: arbitrary orientations
+0.0: north-aligned, value from (70.0, 90.0, 180.0): limited FoV, 360.0: arbitrary orientations
 ```
 - Set "train_fov=360", and "random_fov=True" can enable training with random FoVs between (70, 360) degrees
 
