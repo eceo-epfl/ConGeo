@@ -27,11 +27,11 @@ pip install -r requirements.txt
 ## Usage:
 We take the CVUSA for example to illustrate the usage of this repo:
 - Set the path in [dataset](ConGeo/congeo/dataset/cvusa.py) and [training](ConGeo/train_congeo_cvusa.py) configurations to the dataset path.
-- Train by run:
+- Train by running:
 ```
 python train_congeo_cvusa.py
 ```
-- Eval by run:
+- Eval by running:
 ```
 python eval_cvusa.py
 ```
