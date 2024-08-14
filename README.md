@@ -1,5 +1,5 @@
 # ConGeo
-Official method implementation for the ECCV24 paper: ConGeo: Robust Cross-view Geo-localization across Ground View Variations. [arxiv]()
+Official method implementation for the ECCV24 paper: ConGeo: Robust Cross-view Geo-localization across Ground View Variations. [arxiv](https://arxiv.org/abs/2403.13965)
 
 ## Introduction
 ConGeo is a learning framework that can be applied to base Cross-View Geo-Localization (CVGL) architectures for robust CVGL across ground view variations using a single model.
