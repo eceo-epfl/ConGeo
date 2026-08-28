@@ -51,10 +51,12 @@ Tips:
 We would like to thank the authors of [Sample4Geo](https://github.com/Skyy93/Sample4Geo) for the code basis of this work. If you find this work helpful, please consider citing:
 ```bibtex
 @article{mi2024congeo,
-  title={ConGeo: Robust Cross-view Geo-localization across Ground View Variations},
+  title={Congeo: Robust cross-view geo-localization across ground view variations},
   author={Mi, Li and Xu, Chang and Castillo-Navarro, Javiera and Montariol, Syrielle and Yang, Wen and Bosselut, Antoine and Tuia, Devis},
-  journal={arXiv preprint arXiv:2403.13965},
-  year={2024}
+  booktitle={European Conference on Computer Vision},
+  pages={214--230},
+  year={2024},
+  organization={Springer}
 }
 
 @inproceedings{deuser2023sample4geo,
